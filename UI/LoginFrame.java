@@ -54,7 +54,16 @@ public class LoginFrame extends JFrame implements ActionListener {
         usernameField.setFont(customFont);
         panel.add(usernameField);
 
+        // 密码标签
+        JLabel passwordLabel = new JLabel("密码：");
+        passwordLabel.setBounds(50, 150, 150, 30);
+        passwordLabel.setFont(customFont);
+        panel.add(passwordLabel);
 
+        passwordField = new JPasswordField();
+        passwordField.setBounds(160, 150, 190, 30);
+        passwordField.setFont(customFont);
+        panel.add(passwordField);
 
         // 登录按钮
         loginButton = new JButton("登   录");
